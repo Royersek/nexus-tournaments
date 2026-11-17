@@ -1,0 +1,6 @@
+{
+  "name": "nexus-tournaments-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Aplicación React + Vite + Tailwind"
+}
