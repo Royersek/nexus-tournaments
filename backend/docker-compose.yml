@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: nexus-tournaments-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: nexus_tournaments
+    ports:
+      - "5433:5432"
+    volumes:
+      - nexus_tournaments_pg:/var/lib/postgresql/data
+
+volumes:
+  nexus_tournaments_pg:
